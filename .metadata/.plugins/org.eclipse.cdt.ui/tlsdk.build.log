@@ -1,0 +1,1706 @@
+
+**** Build of configuration 8366_dongle_double for project tlsdk ****
+
+make pre-build main-build 
+E:\workplace\project\js_km_proj\tlsdk/getver.sh
+E:\workplace\project\js_km_proj\tlsdk/getver.sh: line 4: git: command not found
+ 
+Building file: ../vendor/link_layer/demo.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/link_layer/demo.o" "../vendor/link_layer/demo.c"
+Finished building: ../vendor/link_layer/demo.c
+ 
+Building file: ../vendor/link_layer/rf_ll.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/link_layer/rf_ll.o" "../vendor/link_layer/rf_ll.c"
+In file included from ../vendor/link_layer/../../proj/mcu/register.h:6:0,
+                 from ../vendor/link_layer/../../proj/tl_common.h:19,
+                 from ../vendor/link_layer/rf_ll.c:7:
+../vendor/link_layer/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/link_layer/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/link_layer/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/link_layer/../../proj/tl_common.h:25,
+                 from ../vendor/link_layer/rf_ll.c:7:
+../vendor/link_layer/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/link_layer/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/link_layer/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/link_layer/../../proj/common/../tl_common.h:28,
+                 from ../vendor/link_layer/../../proj/common/breakpoint.h:3,
+                 from ../vendor/link_layer/../../proj/tl_common.h:27,
+                 from ../vendor/link_layer/rf_ll.c:7:
+../vendor/link_layer/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/link_layer/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/link_layer/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/link_layer/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/link_layer/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/link_layer/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/link_layer/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/link_layer/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../vendor/link_layer/rf_ll.c: In function 'irq_host_timer1':
+../vendor/link_layer/rf_ll.c:443:3: warning: implicit declaration of function 'rf_send_single_packet'
+../vendor/link_layer/rf_ll.c: In function 'irq_host_rx':
+../vendor/link_layer/rf_ll.c:475:3: warning: implicit declaration of function 'rf_set_tx_rx_off'
+../vendor/link_layer/rf_ll.c:489:3: warning: implicit declaration of function 'rf_start_stx'
+../vendor/link_layer/rf_ll.c: In function 'irq_host_tx':
+../vendor/link_layer/rf_ll.c:539:9: warning: type defaults to 'int' in declaration of 'irq_host_tx_no'
+Finished building: ../vendor/link_layer/rf_ll.c
+ 
+Building file: ../vendor/dongle_double/dongle.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/dongle_double/dongle.o" "../vendor/dongle_double/dongle.c"
+In file included from ../vendor/dongle_double/../../proj/mcu/register.h:6:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:19,
+                 from ../vendor/dongle_double/dongle.c:1:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/dongle_double/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:25,
+                 from ../vendor/dongle_double/dongle.c:1:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/dongle_double/../../proj/common/../tl_common.h:28,
+                 from ../vendor/dongle_double/../../proj/common/breakpoint.h:3,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:27,
+                 from ../vendor/dongle_double/dongle.c:1:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+In file included from ../vendor/dongle_double/dongle.c:7:0:
+../vendor/dongle_double/dongle_custom.h: In function 'set_device_id_in_ram':
+../vendor/dongle_double/dongle_custom.h:103:1: warning: no return statement in function returning non-void
+../vendor/dongle_double/dongle.c: In function 'callback_pairing':
+../vendor/dongle_double/dongle.c:262:3: warning: implicit declaration of function 'set_device_id_in_firmware'
+../vendor/dongle_double/dongle.c: In function 'callback_mouse':
+../vendor/dongle_double/dongle.c:330:3: warning: implicit declaration of function 'usbmouse_add_frame'
+../vendor/dongle_double/dongle.c: In function 'callback_keyboard':
+../vendor/dongle_double/dongle.c:390:3: warning: implicit declaration of function 'usbkb_hid_report'
+../vendor/dongle_double/dongle.c:394:4: warning: implicit declaration of function 'dongle_resume_request'
+../vendor/dongle_double/dongle.c: In function 'main_loop':
+../vendor/dongle_double/dongle.c:641:2: warning: implicit declaration of function 'usb_handle_irq'
+../vendor/dongle_double/dongle.c:643:2: warning: passing argument 1 of 'usb_host_cmd_proc' from incompatible pointer type
+../vendor/dongle_double/dongle_emi.h:11:6: note: expected 'u8 *' but argument is of type 'struct rf_ack_empty_t *'
+Finished building: ../vendor/dongle_double/dongle.c
+ 
+Building file: ../vendor/dongle_double/dongle_custom.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/dongle_double/dongle_custom.o" "../vendor/dongle_double/dongle_custom.c"
+In file included from ../vendor/dongle_double/../../proj/mcu/register.h:6:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:19,
+                 from ../vendor/dongle_double/dongle_custom.c:8:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/dongle_double/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:25,
+                 from ../vendor/dongle_double/dongle_custom.c:8:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/dongle_double/../../proj/common/../tl_common.h:28,
+                 from ../vendor/dongle_double/../../proj/common/breakpoint.h:3,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:27,
+                 from ../vendor/dongle_double/dongle_custom.c:8:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+In file included from ../vendor/dongle_double/dongle_custom.c:15:0:
+../vendor/dongle_double/dongle_custom.h: In function 'set_device_id_in_ram':
+../vendor/dongle_double/dongle_custom.h:103:1: warning: no return statement in function returning non-void
+Finished building: ../vendor/dongle_double/dongle_custom.c
+ 
+Building file: ../vendor/dongle_double/dongle_emi.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/dongle_double/dongle_emi.o" "../vendor/dongle_double/dongle_emi.c"
+In file included from ../vendor/dongle_double/../../proj/mcu/register.h:6:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:19,
+                 from ../vendor/dongle_double/dongle_emi.c:8:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/dongle_double/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:25,
+                 from ../vendor/dongle_double/dongle_emi.c:8:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/dongle_double/../../proj/common/../tl_common.h:28,
+                 from ../vendor/dongle_double/../../proj/common/breakpoint.h:3,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:27,
+                 from ../vendor/dongle_double/dongle_emi.c:8:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+In file included from ../vendor/dongle_double/dongle_emi.c:15:0:
+../vendor/dongle_double/dongle_custom.h: In function 'set_device_id_in_ram':
+../vendor/dongle_double/dongle_custom.h:103:1: warning: no return statement in function returning non-void
+../vendor/dongle_double/dongle_emi.c: In function 'usb_host_cmd_proc':
+../vendor/dongle_double/dongle_emi.c:97:9: warning: type defaults to 'int' in declaration of 'emi_flg'
+../vendor/dongle_double/dongle_emi.c:94:7: warning: 'chn_idx' may be used uninitialized in this function
+../vendor/dongle_double/dongle_emi.c:95:7: warning: 'test_mode_sel' may be used uninitialized in this function
+Finished building: ../vendor/dongle_double/dongle_emi.c
+ 
+Building file: ../vendor/dongle_double/dongle_rf.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/dongle_double/dongle_rf.o" "../vendor/dongle_double/dongle_rf.c"
+In file included from ../vendor/dongle_double/../../proj/mcu/register.h:6:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:19,
+                 from ../vendor/dongle_double/dongle_rf.c:7:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/dongle_double/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:25,
+                 from ../vendor/dongle_double/dongle_rf.c:7:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/dongle_double/../../proj/common/../tl_common.h:28,
+                 from ../vendor/dongle_double/../../proj/common/breakpoint.h:3,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:27,
+                 from ../vendor/dongle_double/dongle_rf.c:7:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../vendor/dongle_double/dongle_rf.c
+ 
+Building file: ../vendor/dongle_double/dongle_suspend.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/dongle_double/dongle_suspend.o" "../vendor/dongle_double/dongle_suspend.c"
+In file included from ../vendor/dongle_double/../../proj/mcu/register.h:6:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:19,
+                 from ../vendor/dongle_double/dongle_suspend.c:8:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/dongle_double/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:25,
+                 from ../vendor/dongle_double/dongle_suspend.c:8:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/dongle_double/../../proj/common/../tl_common.h:28,
+                 from ../vendor/dongle_double/../../proj/common/breakpoint.h:3,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:27,
+                 from ../vendor/dongle_double/dongle_suspend.c:8:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../vendor/dongle_double/dongle_suspend.c: In function 'suspend_and_wakeup':
+../vendor/dongle_double/dongle_suspend.c:59:4: warning: implicit declaration of function 'cpu_sleep_wakeup_rc'
+Finished building: ../vendor/dongle_double/dongle_suspend.c
+ 
+Building file: ../vendor/dongle_double/dongle_usb.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/dongle_double/dongle_usb.o" "../vendor/dongle_double/dongle_usb.c"
+In file included from ../vendor/dongle_double/../../proj/mcu/register.h:6:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:19,
+                 from ../vendor/dongle_double/dongle_usb.c:8:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/dongle_double/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:25,
+                 from ../vendor/dongle_double/dongle_usb.c:8:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/dongle_double/../../proj/common/../tl_common.h:28,
+                 from ../vendor/dongle_double/../../proj/common/breakpoint.h:3,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:27,
+                 from ../vendor/dongle_double/dongle_usb.c:8:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+In file included from ../vendor/dongle_double/dongle_usb.c:13:0:
+../vendor/dongle_double/dongle_custom.h: In function 'set_device_id_in_ram':
+../vendor/dongle_double/dongle_custom.h:103:1: warning: no return statement in function returning non-void
+Finished building: ../vendor/dongle_double/dongle_usb.c
+ 
+Building file: ../vendor/dongle_double/main.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/dongle_double/main.o" "../vendor/dongle_double/main.c"
+In file included from ../vendor/dongle_double/../../proj/mcu/register.h:6:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:19,
+                 from ../vendor/dongle_double/main.c:2:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/dongle_double/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:25,
+                 from ../vendor/dongle_double/main.c:2:
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/dongle_double/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/dongle_double/../../proj/common/../tl_common.h:28,
+                 from ../vendor/dongle_double/../../proj/common/breakpoint.h:3,
+                 from ../vendor/dongle_double/../../proj/tl_common.h:27,
+                 from ../vendor/dongle_double/main.c:2:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/dongle_double/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../vendor/dongle_double/main.c
+ 
+Building file: ../vendor/common/cust_irq.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/cust_irq.o" "../vendor/common/cust_irq.c"
+In file included from ../vendor/common/../../proj/mcu/register.h:6:0,
+                 from ../vendor/common/../../proj/tl_common.h:19,
+                 from ../vendor/common/cust_irq.c:2:
+../vendor/common/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/common/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/common/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/common/../../proj/tl_common.h:25,
+                 from ../vendor/common/cust_irq.c:2:
+../vendor/common/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/common/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/common/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/common/../../proj/common/../tl_common.h:28,
+                 from ../vendor/common/../../proj/common/breakpoint.h:3,
+                 from ../vendor/common/../../proj/tl_common.h:27,
+                 from ../vendor/common/cust_irq.c:2:
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../vendor/common/cust_irq.c
+ 
+Building file: ../vendor/common/device_led.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/device_led.o" "../vendor/common/device_led.c"
+In file included from ../vendor/common/../../proj/mcu/register.h:6:0,
+                 from ../vendor/common/../../proj/tl_common.h:19,
+                 from ../vendor/common/device_led.c:8:
+../vendor/common/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/common/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/common/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/common/../../proj/tl_common.h:25,
+                 from ../vendor/common/device_led.c:8:
+../vendor/common/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/common/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/common/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/common/../../proj/common/../tl_common.h:28,
+                 from ../vendor/common/../../proj/common/breakpoint.h:3,
+                 from ../vendor/common/../../proj/tl_common.h:27,
+                 from ../vendor/common/device_led.c:8:
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../vendor/common/device_led.c: In function 'device_led_init':
+../vendor/common/device_led.c:23:5: warning: implicit declaration of function 'led_on_off'
+../vendor/common/device_led.c: At top level:
+../vendor/common/device_led.c:27:6: warning: conflicting types for 'led_on_off'
+../vendor/common/device_led.c:23:5: note: previous implicit declaration of 'led_on_off' was here
+Finished building: ../vendor/common/device_led.c
+ 
+Building file: ../vendor/common/device_power.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/device_power.o" "../vendor/common/device_power.c"
+In file included from ../vendor/common/../../proj/mcu/register.h:6:0,
+                 from ../vendor/common/../../proj/tl_common.h:19,
+                 from ../vendor/common/device_power.c:8:
+../vendor/common/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/common/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/common/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/common/../../proj/tl_common.h:25,
+                 from ../vendor/common/device_power.c:8:
+../vendor/common/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/common/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/common/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/common/../../proj/common/../tl_common.h:28,
+                 from ../vendor/common/../../proj/common/breakpoint.h:3,
+                 from ../vendor/common/../../proj/tl_common.h:27,
+                 from ../vendor/common/device_power.c:8:
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+In file included from ../vendor/common/device_power.c:10:0:
+../vendor/common/device_power.h: In function 'device_sleep_wakeup':
+../vendor/common/device_power.h:58:9: warning: implicit declaration of function 'cpu_suspend_wakeup_sim'
+../vendor/common/device_power.h:61:3: warning: implicit declaration of function 'cpu_sleep_wakeup_rc'
+Finished building: ../vendor/common/device_power.c
+ 
+Building file: ../vendor/common/emi.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/emi.o" "../vendor/common/emi.c"
+In file included from ../vendor/common/../../proj/mcu/register.h:6:0,
+                 from ../vendor/common/../../proj/tl_common.h:19,
+                 from ../vendor/common/emi.c:7:
+../vendor/common/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/common/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/common/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/common/../../proj/tl_common.h:25,
+                 from ../vendor/common/emi.c:7:
+../vendor/common/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/common/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/common/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/common/../../proj/common/../tl_common.h:28,
+                 from ../vendor/common/../../proj/common/breakpoint.h:3,
+                 from ../vendor/common/../../proj/tl_common.h:27,
+                 from ../vendor/common/emi.c:7:
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../vendor/common/emi.c:50:24: warning: initialization from incompatible pointer type
+../vendor/common/emi.c:71:15: warning: return type defaults to 'int'
+../vendor/common/emi.c: In function 'emi_process':
+../vendor/common/emi.c:117:13: warning: passing argument 1 of 'emi_cd_init' makes integer from pointer without a cast
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:179:20: note: expected 'u32' but argument is of type 'u32 *'
+../vendor/common/emi.c:144:9: warning: implicit declaration of function 'rf_send_single_packet'
+../vendor/common/emi.c: In function 'emi_fifo_init':
+../vendor/common/emi.c:76:1: warning: control reaches end of non-void function
+Finished building: ../vendor/common/emi.c
+ 
+Building file: ../vendor/common/tl_audio.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"vendor/common/tl_audio.o" "../vendor/common/tl_audio.c"
+In file included from ../vendor/common/../../proj/mcu/register.h:6:0,
+                 from ../vendor/common/../../proj/tl_common.h:19,
+                 from ../vendor/common/tl_audio.c:1:
+../vendor/common/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../vendor/common/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../vendor/common/../../proj/mcu/gpio.h:34:0,
+                 from ../vendor/common/../../proj/tl_common.h:25,
+                 from ../vendor/common/tl_audio.c:1:
+../vendor/common/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../vendor/common/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../vendor/common/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../vendor/common/../../proj/common/../tl_common.h:28,
+                 from ../vendor/common/../../proj/common/breakpoint.h:3,
+                 from ../vendor/common/../../proj/tl_common.h:27,
+                 from ../vendor/common/tl_audio.c:1:
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../vendor/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../vendor/common/tl_audio.c: In function 'pcm_to_adpcm':
+../vendor/common/tl_audio.c:27:23: warning: 'code16' may be used uninitialized in this function
+../vendor/common/tl_audio.c: In function 'mic_to_adpcm':
+../vendor/common/tl_audio.c:92:23: warning: 'code16' may be used uninitialized in this function
+../vendor/common/tl_audio.c: In function 'adpcm_to_pcm':
+../vendor/common/tl_audio.c:160:6: warning: 'predict' may be used uninitialized in this function
+../vendor/common/tl_audio.c:163:16: warning: 'code' may be used uninitialized in this function
+Finished building: ../vendor/common/tl_audio.c
+ 
+Building file: ../proj_lib/internal_test.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/internal_test.o" "../proj_lib/internal_test.c"
+In file included from ../proj_lib/../proj/mcu/register.h:6:0,
+                 from ../proj_lib/../proj/tl_common.h:19,
+                 from ../proj_lib/internal_test.c:1:
+../proj_lib/../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj_lib/../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj_lib/../proj/mcu/gpio.h:34:0,
+                 from ../proj_lib/../proj/tl_common.h:25,
+                 from ../proj_lib/internal_test.c:1:
+../proj_lib/../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj_lib/../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj_lib/../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj_lib/../proj/common/../tl_common.h:28,
+                 from ../proj_lib/../proj/common/breakpoint.h:3,
+                 from ../proj_lib/../proj/tl_common.h:27,
+                 from ../proj_lib/internal_test.c:1:
+../proj_lib/../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj_lib/../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj_lib/../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj_lib/../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj_lib/../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj_lib/../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj_lib/../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj_lib/../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj_lib/internal_test.c
+ 
+Building file: ../proj_lib/pm_8266.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/pm_8266.o" "../proj_lib/pm_8266.c"
+Finished building: ../proj_lib/pm_8266.c
+ 
+Building file: ../proj_lib/pm_8267.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/pm_8267.o" "../proj_lib/pm_8267.c"
+Finished building: ../proj_lib/pm_8267.c
+ 
+Building file: ../proj_lib/pm_8366.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/pm_8366.o" "../proj_lib/pm_8366.c"
+In file included from ../proj_lib/../proj/mcu/register.h:6:0,
+                 from ../proj_lib/pm_8366.c:15:
+../proj_lib/../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj_lib/../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj_lib/pm_8366.c:17:0:
+../proj_lib/../proj/mcu/analog.h: At top level:
+../proj_lib/../proj/mcu/analog.h:7:6: warning: conflicting types for 'analog_write'
+../proj_lib/../proj/mcu/../mcu_spec/register_8366.h:1215:3: note: previous implicit declaration of 'analog_write' was here
+In file included from ../proj_lib/rf_drv.h:7:0,
+                 from ../proj_lib/pm_8366.c:21:
+../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj_lib/rf_drv_8366.h: At top level:
+../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../proj_lib/pm_8366.c:101:2: warning: missing braces around initializer
+../proj_lib/pm_8366.c:101:2: warning: (near initialization for 'tbl_cpu_wakeup_init[0]')
+../proj_lib/pm_8366.c: In function 'cpu_sleep_wakeup':
+../proj_lib/pm_8366.c:224:5: warning: 'anareg16' may be used uninitialized in this function
+../proj_lib/pm_8366.c: In function 'cpu_sleep_wakeup_rc':
+../proj_lib/pm_8366.c:339:5: warning: 'anareg16' may be used uninitialized in this function
+Finished building: ../proj_lib/pm_8366.c
+ 
+Building file: ../proj_lib/pm_8368.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/pm_8368.o" "../proj_lib/pm_8368.c"
+Finished building: ../proj_lib/pm_8368.c
+ 
+Building file: ../proj_lib/pm_8510.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/pm_8510.o" "../proj_lib/pm_8510.c"
+Finished building: ../proj_lib/pm_8510.c
+ 
+Building file: ../proj_lib/pm_8511.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/pm_8511.o" "../proj_lib/pm_8511.c"
+../proj_lib/pm_8511.c:151:2: warning: multi-line comment
+Finished building: ../proj_lib/pm_8511.c
+ 
+Building file: ../proj_lib/rf_drv_8266.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/rf_drv_8266.o" "../proj_lib/rf_drv_8266.c"
+Finished building: ../proj_lib/rf_drv_8266.c
+ 
+Building file: ../proj_lib/rf_drv_8267.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/rf_drv_8267.o" "../proj_lib/rf_drv_8267.c"
+Finished building: ../proj_lib/rf_drv_8267.c
+ 
+Building file: ../proj_lib/rf_drv_8366.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/rf_drv_8366.o" "../proj_lib/rf_drv_8366.c"
+In file included from ../proj_lib/../proj/mcu/register.h:6:0,
+                 from ../proj_lib/rf_drv_8366.c:15:
+../proj_lib/../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj_lib/../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj_lib/rf_drv_8366.c:16:0:
+../proj_lib/../proj/mcu/analog.h: At top level:
+../proj_lib/../proj/mcu/analog.h:7:6: warning: conflicting types for 'analog_write'
+../proj_lib/../proj/mcu/../mcu_spec/register_8366.h:1215:3: note: previous implicit declaration of 'analog_write' was here
+In file included from ../proj_lib/rf_drv_8366.c:18:0:
+../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj_lib/rf_drv_8366.h: At top level:
+../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../proj_lib/rf_drv_8366.c:112:2: warning: missing braces around initializer
+../proj_lib/rf_drv_8366.c:112:2: warning: (near initialization for 'tbl_rf_ini[0]')
+../proj_lib/rf_drv_8366.c:206:2: warning: missing braces around initializer
+../proj_lib/rf_drv_8366.c:206:2: warning: (near initialization for 'tbl_rf_ini_16M[0]')
+../proj_lib/rf_drv_8366.c:213:2: warning: missing braces around initializer
+../proj_lib/rf_drv_8366.c:213:2: warning: (near initialization for 'tbl_rf_ini_12M[0]')
+../proj_lib/rf_drv_8366.c:223:2: warning: missing braces around initializer
+../proj_lib/rf_drv_8366.c:223:2: warning: (near initialization for 'tbl_tp_ini[0]')
+../proj_lib/rf_drv_8366.c:230:2: warning: missing braces around initializer
+../proj_lib/rf_drv_8366.c:230:2: warning: (near initialization for 'tbl_tp_close[0]')
+../proj_lib/rf_drv_8366.c: In function 'rf_set_power_level_index':
+../proj_lib/rf_drv_8366.c:367:10: warning: initialization discards qualifiers from pointer target type
+Finished building: ../proj_lib/rf_drv_8366.c
+ 
+Building file: ../proj_lib/rf_drv_8368.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/rf_drv_8368.o" "../proj_lib/rf_drv_8368.c"
+Finished building: ../proj_lib/rf_drv_8368.c
+ 
+Building file: ../proj_lib/rf_drv_8510.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/rf_drv_8510.o" "../proj_lib/rf_drv_8510.c"
+Finished building: ../proj_lib/rf_drv_8510.c
+ 
+Building file: ../proj_lib/rf_drv_8511.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/rf_drv_8511.o" "../proj_lib/rf_drv_8511.c"
+Finished building: ../proj_lib/rf_drv_8511.c
+ 
+Building file: ../proj_lib/blt_ll/blt_att.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/blt_ll/blt_att.o" "../proj_lib/blt_ll/blt_att.c"
+In file included from ../proj_lib/blt_ll/../../proj/mcu/register.h:6:0,
+                 from ../proj_lib/blt_ll/../../proj/tl_common.h:19,
+                 from ../proj_lib/blt_ll/blt_att.c:1:
+../proj_lib/blt_ll/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj_lib/blt_ll/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj_lib/blt_ll/../../proj/mcu/gpio.h:34:0,
+                 from ../proj_lib/blt_ll/../../proj/tl_common.h:25,
+                 from ../proj_lib/blt_ll/blt_att.c:1:
+../proj_lib/blt_ll/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj_lib/blt_ll/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj_lib/blt_ll/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj_lib/blt_ll/../../proj/common/../tl_common.h:28,
+                 from ../proj_lib/blt_ll/../../proj/common/breakpoint.h:3,
+                 from ../proj_lib/blt_ll/../../proj/tl_common.h:27,
+                 from ../proj_lib/blt_ll/blt_att.c:1:
+../proj_lib/blt_ll/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj_lib/blt_ll/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj_lib/blt_ll/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj_lib/blt_ll/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj_lib/blt_ll/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj_lib/blt_ll/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj_lib/blt_ll/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj_lib/blt_ll/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../proj_lib/blt_ll/blt_att.c: In function 'l2cap_att_handler':
+../proj_lib/blt_ll/blt_att.c:240:4: warning: return makes pointer from integer without a cast
+Finished building: ../proj_lib/blt_ll/blt_att.c
+ 
+Building file: ../proj_lib/blt_ll/blt_ll.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/blt_ll/blt_ll.o" "../proj_lib/blt_ll/blt_ll.c"
+Finished building: ../proj_lib/blt_ll/blt_ll.c
+ 
+Building file: ../proj_lib/aes_sw/aes_ccm.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/aes_sw/aes_ccm.o" "../proj_lib/aes_sw/aes_ccm.c"
+In file included from ../proj_lib/aes_sw/../../proj/mcu/register.h:6:0,
+                 from ../proj_lib/aes_sw/../../proj/tl_common.h:19,
+                 from ../proj_lib/aes_sw/aes_ccm.c:2:
+../proj_lib/aes_sw/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj_lib/aes_sw/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj_lib/aes_sw/../../proj/mcu/gpio.h:34:0,
+                 from ../proj_lib/aes_sw/../../proj/tl_common.h:25,
+                 from ../proj_lib/aes_sw/aes_ccm.c:2:
+../proj_lib/aes_sw/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj_lib/aes_sw/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj_lib/aes_sw/../../proj/common/../tl_common.h:28,
+                 from ../proj_lib/aes_sw/../../proj/common/breakpoint.h:3,
+                 from ../proj_lib/aes_sw/../../proj/tl_common.h:27,
+                 from ../proj_lib/aes_sw/aes_ccm.c:2:
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../proj_lib/aes_sw/aes_ccm.c: In function 'hwAes_encrypt':
+../proj_lib/aes_sw/aes_ccm.c:79:2: warning: implicit declaration of function '_rijndaelEncrypt'
+../proj_lib/aes_sw/aes_ccm.c: In function 'aes_ll_encryption':
+../proj_lib/aes_sw/aes_ccm.c:352:2: warning: implicit declaration of function '_rijndaelSetKey'
+../proj_lib/aes_sw/aes_ccm.c:361:1: warning: control reaches end of non-void function
+Finished building: ../proj_lib/aes_sw/aes_ccm.c
+ 
+Building file: ../proj_lib/aes_sw/aes_sw.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj_lib/aes_sw/aes_sw.o" "../proj_lib/aes_sw/aes_sw.c"
+In file included from ../proj_lib/aes_sw/../../proj/mcu/register.h:6:0,
+                 from ../proj_lib/aes_sw/../../proj/tl_common.h:19,
+                 from ../proj_lib/aes_sw/aes_sw.c:3:
+../proj_lib/aes_sw/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj_lib/aes_sw/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj_lib/aes_sw/../../proj/mcu/gpio.h:34:0,
+                 from ../proj_lib/aes_sw/../../proj/tl_common.h:25,
+                 from ../proj_lib/aes_sw/aes_sw.c:3:
+../proj_lib/aes_sw/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj_lib/aes_sw/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj_lib/aes_sw/../../proj/common/../tl_common.h:28,
+                 from ../proj_lib/aes_sw/../../proj/common/breakpoint.h:3,
+                 from ../proj_lib/aes_sw/../../proj/tl_common.h:27,
+                 from ../proj_lib/aes_sw/aes_sw.c:3:
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj_lib/aes_sw/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../proj_lib/aes_sw/aes_sw.c: In function 'rot':
+../proj_lib/aes_sw/aes_sw.c:57:43: warning: type of 'x' defaults to 'int'
+../proj_lib/aes_sw/aes_sw.c:57:43: warning: type of 'n' defaults to 'int'
+../proj_lib/aes_sw/aes_sw.c: At top level:
+../proj_lib/aes_sw/aes_sw.c:57:43: warning: 'rot' defined but not used
+../proj_lib/aes_sw/aes_sw.c:84:21: warning: 'ctx_iks' defined but not used
+Finished building: ../proj_lib/aes_sw/aes_sw.c
+ 
+Building file: ../proj/mcu_spec/adc_8267.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/adc_8267.o" "../proj/mcu_spec/adc_8267.c"
+In file included from ../proj/mcu_spec/../mcu/register.h:6:0,
+                 from ../proj/mcu_spec/../tl_common.h:19,
+                 from ../proj/mcu_spec/adc_8267.c:8:
+../proj/mcu_spec/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/mcu_spec/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/mcu_spec/../mcu/gpio.h:34:0,
+                 from ../proj/mcu_spec/../tl_common.h:25,
+                 from ../proj/mcu_spec/adc_8267.c:8:
+../proj/mcu_spec/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/mcu_spec/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/mcu_spec/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/mcu_spec/../common/../tl_common.h:28,
+                 from ../proj/mcu_spec/../common/breakpoint.h:3,
+                 from ../proj/mcu_spec/../tl_common.h:27,
+                 from ../proj/mcu_spec/adc_8267.c:8:
+../proj/mcu_spec/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/mcu_spec/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/mcu_spec/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/mcu_spec/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/mcu_spec/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/mcu_spec/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/mcu_spec/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/mcu_spec/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/mcu_spec/adc_8267.c
+ 
+Building file: ../proj/mcu_spec/cstartup_8266.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8266.o" "../proj/mcu_spec/cstartup_8266.S"
+Finished building: ../proj/mcu_spec/cstartup_8266.S
+ 
+Building file: ../proj/mcu_spec/cstartup_8266_ram.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8266_ram.o" "../proj/mcu_spec/cstartup_8266_ram.S"
+Finished building: ../proj/mcu_spec/cstartup_8266_ram.S
+ 
+Building file: ../proj/mcu_spec/cstartup_8267.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8267.o" "../proj/mcu_spec/cstartup_8267.S"
+Finished building: ../proj/mcu_spec/cstartup_8267.S
+ 
+Building file: ../proj/mcu_spec/cstartup_8267_ram.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8267_ram.o" "../proj/mcu_spec/cstartup_8267_ram.S"
+Finished building: ../proj/mcu_spec/cstartup_8267_ram.S
+ 
+Building file: ../proj/mcu_spec/cstartup_8366.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8366.o" "../proj/mcu_spec/cstartup_8366.S"
+Finished building: ../proj/mcu_spec/cstartup_8366.S
+ 
+Building file: ../proj/mcu_spec/cstartup_8366_ram.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8366_ram.o" "../proj/mcu_spec/cstartup_8366_ram.S"
+Finished building: ../proj/mcu_spec/cstartup_8366_ram.S
+ 
+Building file: ../proj/mcu_spec/cstartup_8368.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8368.o" "../proj/mcu_spec/cstartup_8368.S"
+Finished building: ../proj/mcu_spec/cstartup_8368.S
+ 
+Building file: ../proj/mcu_spec/cstartup_8368_ram.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8368_ram.o" "../proj/mcu_spec/cstartup_8368_ram.S"
+Finished building: ../proj/mcu_spec/cstartup_8368_ram.S
+ 
+Building file: ../proj/mcu_spec/cstartup_8510.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8510.o" "../proj/mcu_spec/cstartup_8510.S"
+Finished building: ../proj/mcu_spec/cstartup_8510.S
+ 
+Building file: ../proj/mcu_spec/cstartup_8510_ram.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8510_ram.o" "../proj/mcu_spec/cstartup_8510_ram.S"
+Finished building: ../proj/mcu_spec/cstartup_8510_ram.S
+ 
+Building file: ../proj/mcu_spec/cstartup_8511.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8511.o" "../proj/mcu_spec/cstartup_8511.S"
+Finished building: ../proj/mcu_spec/cstartup_8511.S
+ 
+Building file: ../proj/mcu_spec/cstartup_8511_ram.S
+Invoking: TC32 CC/Assembler
+tc32-elf-gcc -DMCU_CORE_8366 -D__LOAD_RAM_SIZE__=8 -c -o"proj/mcu_spec/cstartup_8511_ram.o" "../proj/mcu_spec/cstartup_8511_ram.S"
+Finished building: ../proj/mcu_spec/cstartup_8511_ram.S
+ 
+Building file: ../proj/mcu_spec/gpio_8266.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/gpio_8266.o" "../proj/mcu_spec/gpio_8266.c"
+Finished building: ../proj/mcu_spec/gpio_8266.c
+ 
+Building file: ../proj/mcu_spec/gpio_8267.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/gpio_8267.o" "../proj/mcu_spec/gpio_8267.c"
+Finished building: ../proj/mcu_spec/gpio_8267.c
+ 
+Building file: ../proj/mcu_spec/gpio_8366.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/gpio_8366.o" "../proj/mcu_spec/gpio_8366.c"
+In file included from ../proj/mcu_spec/../mcu/register.h:6:0,
+                 from ../proj/mcu_spec/gpio_8366.c:15:
+../proj/mcu_spec/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/mcu_spec/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/mcu_spec/gpio_8366.c:17:0:
+../proj/mcu_spec/../mcu/analog.h: At top level:
+../proj/mcu_spec/../mcu/analog.h:7:6: warning: conflicting types for 'analog_write'
+../proj/mcu_spec/../mcu/../mcu_spec/register_8366.h:1215:3: note: previous implicit declaration of 'analog_write' was here
+Finished building: ../proj/mcu_spec/gpio_8366.c
+ 
+Building file: ../proj/mcu_spec/gpio_8368.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/gpio_8368.o" "../proj/mcu_spec/gpio_8368.c"
+Finished building: ../proj/mcu_spec/gpio_8368.c
+ 
+Building file: ../proj/mcu_spec/gpio_8510.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/gpio_8510.o" "../proj/mcu_spec/gpio_8510.c"
+Finished building: ../proj/mcu_spec/gpio_8510.c
+ 
+Building file: ../proj/mcu_spec/gpio_8511.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu_spec/gpio_8511.o" "../proj/mcu_spec/gpio_8511.c"
+Finished building: ../proj/mcu_spec/gpio_8511.c
+ 
+Building file: ../proj/mcu/analog.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu/analog.o" "../proj/mcu/analog.c"
+Finished building: ../proj/mcu/analog.c
+ 
+Building file: ../proj/mcu/anareg.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu/anareg.o" "../proj/mcu/anareg.c"
+Finished building: ../proj/mcu/anareg.c
+ 
+Building file: ../proj/mcu/audhw.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu/audhw.o" "../proj/mcu/audhw.c"
+In file included from ../proj/mcu/../mcu/register.h:6:0,
+                 from ../proj/mcu/../tl_common.h:19,
+                 from ../proj/mcu/audhw.c:2:
+../proj/mcu/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/mcu/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/mcu/../mcu/gpio.h:34:0,
+                 from ../proj/mcu/../tl_common.h:25,
+                 from ../proj/mcu/audhw.c:2:
+../proj/mcu/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/mcu/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/mcu/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/mcu/../common/../tl_common.h:28,
+                 from ../proj/mcu/../common/breakpoint.h:3,
+                 from ../proj/mcu/../tl_common.h:27,
+                 from ../proj/mcu/audhw.c:2:
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/mcu/audhw.c
+ 
+Building file: ../proj/mcu/clock.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu/clock.o" "../proj/mcu/clock.c"
+In file included from ../proj/mcu/../mcu/register.h:6:0,
+                 from ../proj/mcu/../tl_common.h:19,
+                 from ../proj/mcu/clock.c:2:
+../proj/mcu/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/mcu/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/mcu/../mcu/gpio.h:34:0,
+                 from ../proj/mcu/../tl_common.h:25,
+                 from ../proj/mcu/clock.c:2:
+../proj/mcu/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/mcu/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/mcu/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/mcu/../common/../tl_common.h:28,
+                 from ../proj/mcu/../common/breakpoint.h:3,
+                 from ../proj/mcu/../tl_common.h:27,
+                 from ../proj/mcu/clock.c:2:
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/mcu/clock.c
+ 
+Building file: ../proj/mcu/cpu.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu/cpu.o" "../proj/mcu/cpu.c"
+In file included from ../proj/mcu/../mcu/register.h:6:0,
+                 from ../proj/mcu/../tl_common.h:19,
+                 from ../proj/mcu/cpu.c:2:
+../proj/mcu/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/mcu/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/mcu/../mcu/gpio.h:34:0,
+                 from ../proj/mcu/../tl_common.h:25,
+                 from ../proj/mcu/cpu.c:2:
+../proj/mcu/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/mcu/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/mcu/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/mcu/../common/../tl_common.h:28,
+                 from ../proj/mcu/../common/breakpoint.h:3,
+                 from ../proj/mcu/../tl_common.h:27,
+                 from ../proj/mcu/cpu.c:2:
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/mcu/cpu.c
+ 
+Building file: ../proj/mcu/otp.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu/otp.o" "../proj/mcu/otp.c"
+In file included from ../proj/mcu/../mcu/register.h:6:0,
+                 from ../proj/mcu/../tl_common.h:19,
+                 from ../proj/mcu/otp.c:2:
+../proj/mcu/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/mcu/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/mcu/../mcu/gpio.h:34:0,
+                 from ../proj/mcu/../tl_common.h:25,
+                 from ../proj/mcu/otp.c:2:
+../proj/mcu/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/mcu/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/mcu/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/mcu/../common/../tl_common.h:28,
+                 from ../proj/mcu/../common/breakpoint.h:3,
+                 from ../proj/mcu/../tl_common.h:27,
+                 from ../proj/mcu/otp.c:2:
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/mcu/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../proj/mcu/otp.c:5:1: note: #pragma message: --TODO-- "Pls refine these OTP function.."
+../proj/mcu/otp.c:6:1: note: #pragma message: --NOTE-- "what's the meaning of 0x800019/0x80001a/0x800071"
+../proj/mcu/otp.c: In function 'otp_init_readwrite':
+../proj/mcu/otp.c:17:2: warning: implicit declaration of function 'rega_poweron_dcdc_6p75'
+../proj/mcu/otp.c: In function 'otp_stop_write':
+../proj/mcu/otp.c:35:2: warning: implicit declaration of function 'rega_powerdn_dcdc_6p75'
+Finished building: ../proj/mcu/otp.c
+ 
+Building file: ../proj/mcu/putchar.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu/putchar.o" "../proj/mcu/putchar.c"
+In file included from ../proj/mcu/register.h:4:0,
+                 from ../proj/mcu/putchar.c:4:
+../proj/mcu/../mcu_spec/register_8266.h: In function 'config_adc_channel1':
+../proj/mcu/../mcu_spec/register_8266.h:1372:3: warning: implicit declaration of function 'analog_write'
+Finished building: ../proj/mcu/putchar.c
+ 
+Building file: ../proj/mcu/random.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu/random.o" "../proj/mcu/random.c"
+Finished building: ../proj/mcu/random.c
+ 
+Building file: ../proj/mcu/register.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu/register.o" "../proj/mcu/register.c"
+In file included from ../proj/mcu/register.h:4:0,
+                 from ../proj/mcu/register.c:3:
+../proj/mcu/../mcu_spec/register_8266.h: In function 'config_adc_channel1':
+../proj/mcu/../mcu_spec/register_8266.h:1372:3: warning: implicit declaration of function 'analog_write'
+Finished building: ../proj/mcu/register.c
+ 
+Building file: ../proj/mcu/swire.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/mcu/swire.o" "../proj/mcu/swire.c"
+In file included from ../proj/mcu/register.h:4:0,
+                 from ../proj/mcu/swire.c:3:
+../proj/mcu/../mcu_spec/register_8266.h: In function 'config_adc_channel1':
+../proj/mcu/../mcu_spec/register_8266.h:1372:3: warning: implicit declaration of function 'analog_write'
+Finished building: ../proj/mcu/swire.c
+ 
+Building file: ../proj/drivers/adc.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/adc.o" "../proj/drivers/adc.c"
+In file included from ../proj/drivers/../mcu/register.h:4:0,
+                 from ../proj/drivers/adc.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8266.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8266.h:1372:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/adc.c:5:0:
+../proj/drivers/../mcu/analog.h: At top level:
+../proj/drivers/../mcu/analog.h:7:6: warning: conflicting types for 'analog_write'
+../proj/drivers/../mcu/../mcu_spec/register_8266.h:1372:3: note: previous implicit declaration of 'analog_write' was here
+Finished building: ../proj/drivers/adc.c
+ 
+Building file: ../proj/drivers/airmouse.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/airmouse.o" "../proj/drivers/airmouse.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/airmouse.c:3:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/airmouse.c:3:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/airmouse.c:3:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../proj/drivers/airmouse.c: In function 'airmouse_enable':
+../proj/drivers/airmouse.c:64:3: warning: implicit declaration of function 'i2c_init'
+../proj/drivers/airmouse.c:72:4: warning: implicit declaration of function 'mpu_reset'
+Finished building: ../proj/drivers/airmouse.c
+ 
+Building file: ../proj/drivers/airmouse_cali.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/airmouse_cali.o" "../proj/drivers/airmouse_cali.c"
+Finished building: ../proj/drivers/airmouse_cali.c
+ 
+Building file: ../proj/drivers/audio.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/audio.o" "../proj/drivers/audio.c"
+In file included from ../proj/drivers/../../proj/mcu/register.h:6:0,
+                 from ../proj/drivers/../../proj/tl_common.h:19,
+                 from ../proj/drivers/audio.c:12:
+../proj/drivers/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../../proj/mcu/gpio.h:34:0,
+                 from ../proj/drivers/../../proj/tl_common.h:25,
+                 from ../proj/drivers/audio.c:12:
+../proj/drivers/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../../proj/common/../tl_common.h:28,
+                 from ../proj/drivers/../../proj/common/breakpoint.h:3,
+                 from ../proj/drivers/../../proj/tl_common.h:27,
+                 from ../proj/drivers/audio.c:12:
+../proj/drivers/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/audio.c
+ 
+Building file: ../proj/drivers/battery.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/battery.o" "../proj/drivers/battery.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/battery.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/battery.c:2:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/battery.c:2:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/battery.c
+ 
+Building file: ../proj/drivers/dfifo.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/dfifo.o" "../proj/drivers/dfifo.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/dfifo.c:10:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/dfifo.c:10:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/dfifo.c:10:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/dfifo.c
+ 
+Building file: ../proj/drivers/eth_hw.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/eth_hw.o" "../proj/drivers/eth_hw.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/eth_hw.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/eth_hw.c:2:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/eth_hw.c:2:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/eth_hw.c
+ 
+Building file: ../proj/drivers/ethernet.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/ethernet.o" "../proj/drivers/ethernet.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/ethernet.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/ethernet.c:2:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/ethernet.c:2:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/ethernet.c
+ 
+Building file: ../proj/drivers/flash.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/flash.o" "../proj/drivers/flash.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/flash.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/flash.c:2:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/flash.c:2:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/flash.c
+ 
+Building file: ../proj/drivers/i2c.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/i2c.o" "../proj/drivers/i2c.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/i2c.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/i2c.c:2:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/i2c.c:2:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/i2c.c
+ 
+Building file: ../proj/drivers/id.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/id.o" "../proj/drivers/id.c"
+In file included from ../proj/drivers/../mcu/register.h:4:0,
+                 from ../proj/drivers/id.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8266.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8266.h:1372:3: warning: implicit declaration of function 'analog_write'
+Finished building: ../proj/drivers/id.c
+ 
+Building file: ../proj/drivers/ip_adapt.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/ip_adapt.o" "../proj/drivers/ip_adapt.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/ip_adapt.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/ip_adapt.c:2:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/ip_adapt.c:2:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/ip_adapt.c
+ 
+Building file: ../proj/drivers/keyboard.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/keyboard.o" "../proj/drivers/keyboard.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/keyboard.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/keyboard.c:2:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/keyboard.c:2:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/keyboard.c
+ 
+Building file: ../proj/drivers/mic.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/mic.o" "../proj/drivers/mic.c"
+Finished building: ../proj/drivers/mic.c
+ 
+Building file: ../proj/drivers/pwm.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/pwm.o" "../proj/drivers/pwm.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/pwm.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/pwm.c:2:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/pwm.c:2:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/pwm.c
+ 
+Building file: ../proj/drivers/spi.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/spi.o" "../proj/drivers/spi.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/spi.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/spi.c:2:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/spi.c:2:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/spi.c
+ 
+Building file: ../proj/drivers/syshw.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/syshw.o" "../proj/drivers/syshw.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/syshw.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/syshw.c:2:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/syshw.c:2:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../proj/drivers/syshw.c: In function 'syshw_init':
+../proj/drivers/syshw.c:11:2: warning: implicit declaration of function 'adc_init'
+Finished building: ../proj/drivers/syshw.c
+ 
+Building file: ../proj/drivers/usb.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/usb.o" "../proj/drivers/usb.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/usb.c:1:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/usb.c:1:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/usb.c:1:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../proj/drivers/usb.c: In function 'usb_handle_in_class_endp_req':
+../proj/drivers/usb.c:490:5: warning: unused variable 'ep_ctrl'
+../proj/drivers/usb.c:489:5: warning: unused variable 'property'
+../proj/drivers/usb.c: In function 'usb_suspend_check':
+../proj/drivers/usb.c:698:3: warning: implicit declaration of function 'sys_enter_host_suspend_mode'
+../proj/drivers/usb.c:711:3: warning: implicit declaration of function 'sys_exit_host_suspend_mode'
+Finished building: ../proj/drivers/usb.c
+ 
+Building file: ../proj/drivers/usbdesc.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/usbdesc.o" "../proj/drivers/usbdesc.c"
+In file included from ../proj/drivers/../mcu/register.h:6:0,
+                 from ../proj/drivers/../tl_common.h:19,
+                 from ../proj/drivers/usbdesc.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/drivers/../mcu/gpio.h:34:0,
+                 from ../proj/drivers/../tl_common.h:25,
+                 from ../proj/drivers/usbdesc.c:2:
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/drivers/../common/../tl_common.h:28,
+                 from ../proj/drivers/../common/breakpoint.h:3,
+                 from ../proj/drivers/../tl_common.h:27,
+                 from ../proj/drivers/usbdesc.c:2:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/drivers/usbdesc.c
+ 
+Building file: ../proj/drivers/usbhw.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/drivers/usbhw.o" "../proj/drivers/usbhw.c"
+In file included from ../proj/drivers/../mcu/register.h:4:0,
+                 from ../proj/drivers/usbhw.h:5,
+                 from ../proj/drivers/usbhw.c:2:
+../proj/drivers/../mcu/../mcu_spec/register_8266.h: In function 'config_adc_channel1':
+../proj/drivers/../mcu/../mcu_spec/register_8266.h:1372:3: warning: implicit declaration of function 'analog_write'
+Finished building: ../proj/drivers/usbhw.c
+ 
+Building file: ../proj/common/breakpoint.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/breakpoint.o" "../proj/common/breakpoint.c"
+In file included from ../proj/common/../mcu/register.h:6:0,
+                 from ../proj/common/../tl_common.h:19,
+                 from ../proj/common/breakpoint.h:3,
+                 from ../proj/common/breakpoint.c:2:
+../proj/common/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/common/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/common/../mcu/gpio.h:34:0,
+                 from ../proj/common/../tl_common.h:25,
+                 from ../proj/common/breakpoint.h:3,
+                 from ../proj/common/breakpoint.c:2:
+../proj/common/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/common/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/common/../tl_common.h:28,
+                 from ../proj/common/breakpoint.h:3,
+                 from ../proj/common/breakpoint.c:2:
+../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/common/breakpoint.c
+ 
+Building file: ../proj/common/compatibility.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/compatibility.o" "../proj/common/compatibility.c"
+In file included from ../proj/common/../mcu/register.h:6:0,
+                 from ../proj/common/../tl_common.h:19,
+                 from ../proj/common/compatibility.c:2:
+../proj/common/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/common/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/common/../mcu/gpio.h:34:0,
+                 from ../proj/common/../tl_common.h:25,
+                 from ../proj/common/compatibility.c:2:
+../proj/common/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/common/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/common/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/common/../common/../tl_common.h:28,
+                 from ../proj/common/../common/breakpoint.h:3,
+                 from ../proj/common/../tl_common.h:27,
+                 from ../proj/common/compatibility.c:2:
+../proj/common/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/common/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/common/compatibility.c
+ 
+Building file: ../proj/common/list.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/list.o" "../proj/common/list.c"
+Finished building: ../proj/common/list.c
+ 
+Building file: ../proj/common/log.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/log.o" "../proj/common/log.c"
+In file included from ../proj/common/../mcu/register.h:6:0,
+                 from ../proj/common/../tl_common.h:19,
+                 from ../proj/common/log.c:2:
+../proj/common/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/common/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/common/../mcu/gpio.h:34:0,
+                 from ../proj/common/../tl_common.h:25,
+                 from ../proj/common/log.c:2:
+../proj/common/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/common/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/common/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/common/../common/../tl_common.h:28,
+                 from ../proj/common/../common/breakpoint.h:3,
+                 from ../proj/common/../tl_common.h:27,
+                 from ../proj/common/log.c:2:
+../proj/common/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/common/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/common/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/common/log.c
+ 
+Building file: ../proj/common/mempool.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/mempool.o" "../proj/common/mempool.c"
+Finished building: ../proj/common/mempool.c
+ 
+Building file: ../proj/common/mmem.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/mmem.o" "../proj/common/mmem.c"
+Finished building: ../proj/common/mmem.c
+ 
+Building file: ../proj/common/printf.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/printf.o" "../proj/common/printf.c"
+Finished building: ../proj/common/printf.c
+ 
+Building file: ../proj/common/qsort.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/qsort.o" "../proj/common/qsort.c"
+Finished building: ../proj/common/qsort.c
+ 
+Building file: ../proj/common/selection_sort.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/selection_sort.o" "../proj/common/selection_sort.c"
+Finished building: ../proj/common/selection_sort.c
+ 
+Building file: ../proj/common/string.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/string.o" "../proj/common/string.c"
+Finished building: ../proj/common/string.c
+ 
+Building file: ../proj/common/trace_8368.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/common/trace_8368.o" "../proj/common/trace_8368.c"
+In file included from ../proj/common/../../proj/mcu/register.h:6:0,
+                 from ../proj/common/../../proj/tl_common.h:19,
+                 from ../proj/common/trace_8368.c:8:
+../proj/common/../../proj/mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/common/../../proj/mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/common/../../proj/mcu/gpio.h:34:0,
+                 from ../proj/common/../../proj/tl_common.h:25,
+                 from ../proj/common/trace_8368.c:8:
+../proj/common/../../proj/mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/common/../../proj/mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/common/../../proj/common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/common/../../proj/common/../tl_common.h:28,
+                 from ../proj/common/../../proj/common/breakpoint.h:3,
+                 from ../proj/common/../../proj/tl_common.h:27,
+                 from ../proj/common/trace_8368.c:8:
+../proj/common/../../proj/common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/common/../../proj/common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/common/../../proj/common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/common/../../proj/common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/common/../../proj/common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/common/../../proj/common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/common/trace_8368.c
+ 
+Building file: ../proj/app/usbaud.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/app/usbaud.o" "../proj/app/usbaud.c"
+In file included from ../proj/app/../mcu/register.h:6:0,
+                 from ../proj/app/usbaud.c:3:
+../proj/app/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/app/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/app/../drivers/../mcu/gpio.h:34:0,
+                 from ../proj/app/../drivers/../tl_common.h:25,
+                 from ../proj/app/../drivers/usb.h:3,
+                 from ../proj/app/usbaud.c:6:
+../proj/app/../drivers/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/app/../drivers/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/app/../drivers/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/app/../drivers/../common/../tl_common.h:28,
+                 from ../proj/app/../drivers/../common/breakpoint.h:3,
+                 from ../proj/app/../drivers/../tl_common.h:27,
+                 from ../proj/app/../drivers/usb.h:3,
+                 from ../proj/app/usbaud.c:6:
+../proj/app/../drivers/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/app/../drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/app/../drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/app/../drivers/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/app/../drivers/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/app/../drivers/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/app/../drivers/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/app/../drivers/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+Finished building: ../proj/app/usbaud.c
+ 
+Building file: ../proj/app/usbkb.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/app/usbkb.o" "../proj/app/usbkb.c"
+In file included from ../proj/app/../mcu/register.h:6:0,
+                 from ../proj/app/../tl_common.h:19,
+                 from ../proj/app/usbkb.c:2:
+../proj/app/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/app/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/app/../mcu/gpio.h:34:0,
+                 from ../proj/app/../tl_common.h:25,
+                 from ../proj/app/usbkb.c:2:
+../proj/app/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/app/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/app/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/app/../common/../tl_common.h:28,
+                 from ../proj/app/../common/breakpoint.h:3,
+                 from ../proj/app/../tl_common.h:27,
+                 from ../proj/app/usbkb.c:2:
+../proj/app/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/app/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../proj/app/usbkb.c: In function 'usbkb_report_frame':
+../proj/app/usbkb.c:77:9: warning: implicit declaration of function 'usbkb_hid_report'
+../proj/app/usbkb.c: In function 'usbkb_hid_report_normal':
+../proj/app/usbkb.c:150:15: warning: unused variable 'crch'
+../proj/app/usbkb.c:149:17: warning: unused variable 'crc'
+../proj/app/usbkb.c:148:16: warning: unused variable 'crc_in'
+../proj/app/usbkb.c: At top level:
+../proj/app/usbkb.c:272:6: warning: conflicting types for 'usbkb_hid_report'
+../proj/app/usbkb.c:77:9: note: previous implicit declaration of 'usbkb_hid_report' was here
+Finished building: ../proj/app/usbkb.c
+ 
+Building file: ../proj/app/usbmouse.c
+Invoking: TC32 Compiler
+tc32-elf-gcc -ffunction-sections -fdata-sections -D__PROJECT_DONGLE_DOUBLE__=1 -D__PROJECT_DONGLE_8366__=1 -Wall -O2 -fpack-struct -fshort-enums -finline-small-functions -std=gnu99 -fshort-wchar -fms-extensions -c -o"proj/app/usbmouse.o" "../proj/app/usbmouse.c"
+In file included from ../proj/app/../mcu/register.h:6:0,
+                 from ../proj/app/../tl_common.h:19,
+                 from ../proj/app/usbmouse.c:2:
+../proj/app/../mcu/../mcu_spec/register_8366.h: In function 'config_adc_channel1':
+../proj/app/../mcu/../mcu_spec/register_8366.h:1215:3: warning: implicit declaration of function 'analog_write'
+In file included from ../proj/app/../mcu/gpio.h:34:0,
+                 from ../proj/app/../tl_common.h:25,
+                 from ../proj/app/usbmouse.c:2:
+../proj/app/../mcu/../mcu_spec/gpio_8366.h: In function 'gpio_init':
+../proj/app/../mcu/../mcu_spec/gpio_8366.h:282:2: warning: implicit declaration of function 'analog_read'
+In file included from ../proj/app/../common/../../proj_lib/rf_drv.h:7:0,
+                 from ../proj/app/../common/../tl_common.h:28,
+                 from ../proj/app/../common/breakpoint.h:3,
+                 from ../proj/app/../tl_common.h:27,
+                 from ../proj/app/usbmouse.c:2:
+../proj/app/../common/../../proj_lib/rf_drv_8366.h: In function 'emi_init':
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:167:2: warning: implicit declaration of function 'rf_power_enable'
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:168:5: warning: implicit declaration of function 'rf_set_power_level_index'
+../proj/app/../common/../../proj_lib/rf_drv_8366.h: At top level:
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:233:6: warning: conflicting types for 'rf_power_enable'
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:167:2: note: previous implicit declaration of 'rf_power_enable' was here
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:241:7: warning: conflicting types for 'rf_set_power_level_index'
+../proj/app/../common/../../proj_lib/rf_drv_8366.h:168:5: note: previous implicit declaration of 'rf_set_power_level_index' was here
+../proj/app/usbmouse.c: In function 'usbmouse_add_frame':
+../proj/app/usbmouse.c:128:8: warning: pointer targets in passing argument 1 of 'adaptive_smoother' differ in signedness
+../proj/app/usbmouse.c:45:4: note: expected 'signed char *' but argument is of type 'u8 *'
+../proj/app/usbmouse.c:128:8: warning: pointer targets in passing argument 2 of 'adaptive_smoother' differ in signedness
+../proj/app/usbmouse.c:45:4: note: expected 'signed char *' but argument is of type 'u8 *'
+Finished building: ../proj/app/usbmouse.c
+ 
+Building target: tlsdk.elf
+Invoking: TC32 C Linker
+tc32-elf-ld --gc-sections  -T ../boot.link -o"tlsdk.elf"  ./div_mod.o  ./vendor/link_layer/demo.o ./vendor/link_layer/rf_ll.o  ./vendor/dongle_double/dongle.o ./vendor/dongle_double/dongle_custom.o ./vendor/dongle_double/dongle_emi.o ./vendor/dongle_double/dongle_rf.o ./vendor/dongle_double/dongle_suspend.o ./vendor/dongle_double/dongle_usb.o ./vendor/dongle_double/main.o  ./vendor/common/cust_irq.o ./vendor/common/device_led.o ./vendor/common/device_power.o ./vendor/common/emi.o ./vendor/common/tl_audio.o  ./proj_lib/internal_test.o ./proj_lib/pm_8266.o ./proj_lib/pm_8267.o ./proj_lib/pm_8366.o ./proj_lib/pm_8368.o ./proj_lib/pm_8510.o ./proj_lib/pm_8511.o ./proj_lib/rf_drv_8266.o ./proj_lib/rf_drv_8267.o ./proj_lib/rf_drv_8366.o ./proj_lib/rf_drv_8368.o ./proj_lib/rf_drv_8510.o ./proj_lib/rf_drv_8511.o  ./proj_lib/blt_ll/blt_att.o ./proj_lib/blt_ll/blt_ll.o  ./proj_lib/aes_sw/aes_ccm.o ./proj_lib/aes_sw/aes_sw.o  ./proj/mcu_spec/adc_8267.o ./proj/mcu_spec/cstartup_8266.o ./proj/mcu_spec/cstartup_8266_ram.o ./proj/mcu_spec/cstartup_8267.o ./proj/mcu_spec/cstartup_8267_ram.o ./proj/mcu_spec/cstartup_8366.o ./proj/mcu_spec/cstartup_8366_ram.o ./proj/mcu_spec/cstartup_8368.o ./proj/mcu_spec/cstartup_8368_ram.o ./proj/mcu_spec/cstartup_8510.o ./proj/mcu_spec/cstartup_8510_ram.o ./proj/mcu_spec/cstartup_8511.o ./proj/mcu_spec/cstartup_8511_ram.o ./proj/mcu_spec/gpio_8266.o ./proj/mcu_spec/gpio_8267.o ./proj/mcu_spec/gpio_8366.o ./proj/mcu_spec/gpio_8368.o ./proj/mcu_spec/gpio_8510.o ./proj/mcu_spec/gpio_8511.o  ./proj/mcu/analog.o ./proj/mcu/anareg.o ./proj/mcu/audhw.o ./proj/mcu/clock.o ./proj/mcu/cpu.o ./proj/mcu/otp.o ./proj/mcu/putchar.o ./proj/mcu/random.o ./proj/mcu/register.o ./proj/mcu/swire.o  ./proj/drivers/adc.o ./proj/drivers/airmouse.o ./proj/drivers/airmouse_cali.o ./proj/drivers/audio.o ./proj/drivers/battery.o ./proj/drivers/dfifo.o ./proj/drivers/eth_hw.o ./proj/drivers/ethernet.o ./proj/drivers/flash.o ./proj/drivers/i2c.o ./proj/drivers/id.o ./proj/drivers/ip_adapt.o ./proj/drivers/keyboard.o ./proj/drivers/mic.o ./proj/drivers/pwm.o ./proj/drivers/spi.o ./proj/drivers/syshw.o ./proj/drivers/usb.o ./proj/drivers/usbdesc.o ./proj/drivers/usbhw.o  ./proj/common/breakpoint.o ./proj/common/compatibility.o ./proj/common/list.o ./proj/common/log.o ./proj/common/mempool.o ./proj/common/mmem.o ./proj/common/printf.o ./proj/common/qsort.o ./proj/common/selection_sort.o ./proj/common/string.o ./proj/common/trace_8368.o  ./proj/app/usbaud.o ./proj/app/usbkb.o ./proj/app/usbmouse.o   
+Finished building target: tlsdk.elf
+ 
+Invoking: TC32 Create Extended Listing
+tc32-elf-objdump -x -D -l -S tlsdk.elf  >"8366_dongle_double.lst"
+Finished building: 8366_dongle_double.lst
+ 
+Create Flash image (binary format)
+tc32-elf-objcopy -O binary tlsdk.elf  "8366_dongle_double.bin"
+Finished building: 8366_dongle_double.bin
+ 
+Invoking: Print Size
+tc32-elf-size -t tlsdk.elf
+   text	   data	    bss	    dec	    hex	filename
+  12020	    440	    948	  13408	   3460	tlsdk.elf
+  12020	    440	    948	  13408	   3460	(TOTALS)
+Finished building: sizedummy
+ 

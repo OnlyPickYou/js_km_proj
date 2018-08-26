@@ -1,0 +1,95 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../makefile.init
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include subdir.mk
+-include vendor/link_layer/subdir.mk
+-include vendor/dongle/subdir.mk
+-include vendor/common/subdir.mk
+-include remote/vendor/remote/subdir.mk
+-include remote/vendor/link_layer/subdir.mk
+-include remote/vendor/common/subdir.mk
+-include remote/proj_lib/subdir.mk
+-include remote/proj_lib/blt_ll/subdir.mk
+-include remote/proj/mcu_spec/subdir.mk
+-include remote/proj/mcu/subdir.mk
+-include remote/proj/drivers/subdir.mk
+-include remote/proj/common/subdir.mk
+-include remote/proj/app/subdir.mk
+-include remote/subdir.mk
+-include proj_lib/subdir.mk
+-include proj_lib/blt_ll/subdir.mk
+-include proj_lib/aes_sw/subdir.mk
+-include proj/mcu_spec/subdir.mk
+-include proj/mcu/subdir.mk
+-include proj/drivers/subdir.mk
+-include proj/common/subdir.mk
+-include proj/app/subdir.mk
+-include objects.mk
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+LST += \
+8366_dongle.lst \
+
+FLASH_IMAGE += \
+8366_dongle.bin \
+
+SIZEDUMMY += \
+sizedummy \
+
+
+# All Target
+all: pre-build main-build
+
+# Main-build Target
+main-build: tlsdk.elf secondary-outputs
+
+# Tool invocations
+tlsdk.elf: $(OBJS) $(USER_OBJS)
+	@echo 'Building target: $@'
+	@echo 'Invoking: TC32 C Linker'
+	tc32-elf-ld --gc-sections  -T ../boot.link -o"tlsdk.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+8366_dongle.lst: tlsdk.elf
+	@echo 'Invoking: TC32 Create Extended Listing'
+	tc32-elf-objdump -x -D -l -S tlsdk.elf  >"8366_dongle.lst"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+8366_dongle.bin: tlsdk.elf
+	@echo 'Create Flash image (binary format)'
+	tc32-elf-objcopy -O binary tlsdk.elf  "8366_dongle.bin"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+sizedummy: tlsdk.elf
+	@echo 'Invoking: Print Size'
+	tc32-elf-size -t tlsdk.elf
+	@echo 'Finished building: $@'
+	@echo ' '
+
+# Other Targets
+clean:
+	-$(RM) $(OBJS)$(FLASH_IMAGE)$(ELFS)$(LST)$(SIZEDUMMY) tlsdk.elf
+	-@echo ' '
+
+pre-build:
+	-E:\workplace\project\js_km_proj\tlsdk/getver.sh
+	-@echo ' '
+
+secondary-outputs: $(LST) $(FLASH_IMAGE) $(SIZEDUMMY)
+
+.PHONY: all clean dependents
+.SECONDARY: main-build pre-build
+
+-include ../makefile.targets

@@ -1,0 +1,366 @@
+!SESSION 2018-04-22 08:52:14.668 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-22 08:54:46.331
+!MESSAGE Indexed 'tlsdk' (82 sources, 107 headers) in 2.53 sec: 5,239 declarations; 13,414 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-22 08:57:44.587
+!MESSAGE Indexed 'tlsdk' (82 sources, 104 headers) in 1.84 sec: 5,166 declarations; 14,392 references; 9 unresolved inclusions; 8 syntax errors; 12 unresolved names (0.06%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-22 11:45:27.188
+!MESSAGE Indexed 'tlsdk' (82 sources, 107 headers) in 1.48 sec: 5,240 declarations; 13,415 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-22 12:07:15.107
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 1.51 sec: 5,162 declarations; 14,933 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.03%)
+
+!ENTRY org.eclipse.search 4 0 2018-04-22 12:07:58.672
+!MESSAGE Problems encountered during text search.
+!SUBENTRY 1 org.eclipse.search 4 4 2018-04-22 12:07:58.672
+!MESSAGE File 'tlsdk/8368_keyboard/version.in' has been skipped, problem while reading: ('Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.').
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:699)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:293)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:282)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.getInputStream(FileCharSequenceProvider.java:283)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.initializeReader(FileCharSequenceProvider.java:277)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.reset(FileCharSequenceProvider.java:269)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider.newCharSequence(FileCharSequenceProvider.java:40)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFile(TextSearchVisitor.java:260)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFiles(TextSearchVisitor.java:196)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:172)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:184)
+	at org.eclipse.search.core.text.TextSearchEngine$1.search(TextSearchEngine.java:54)
+	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
+	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2018-04-22 12:07:58.719
+!MESSAGE Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-22 13:00:54.781
+!MESSAGE Indexed 'tlsdk' (82 sources, 107 headers) in 1.52 sec: 5,244 declarations; 13,436 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-22 13:48:19.427
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 1.51 sec: 5,162 declarations; 14,937 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.03%)
+
+!ENTRY org.eclipse.search 4 0 2018-04-22 13:48:42.222
+!MESSAGE Problems encountered during text search.
+!SUBENTRY 1 org.eclipse.search 4 4 2018-04-22 13:48:42.222
+!MESSAGE File 'tlsdk/8368_keyboard/version.in' has been skipped, problem while reading: ('Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.').
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:699)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:293)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:282)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.getInputStream(FileCharSequenceProvider.java:283)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.initializeReader(FileCharSequenceProvider.java:277)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.reset(FileCharSequenceProvider.java:269)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider.newCharSequence(FileCharSequenceProvider.java:40)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFile(TextSearchVisitor.java:260)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFiles(TextSearchVisitor.java:196)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:172)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:184)
+	at org.eclipse.search.core.text.TextSearchEngine$1.search(TextSearchEngine.java:54)
+	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
+	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2018-04-22 13:48:42.223
+!MESSAGE Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.
+
+!ENTRY org.eclipse.search 4 0 2018-04-22 13:48:54.383
+!MESSAGE Problems encountered during text search.
+!SUBENTRY 1 org.eclipse.search 4 4 2018-04-22 13:48:54.383
+!MESSAGE File 'tlsdk/8368_keyboard/version.in' has been skipped, problem while reading: ('Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.').
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:699)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:293)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:282)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.getInputStream(FileCharSequenceProvider.java:283)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.initializeReader(FileCharSequenceProvider.java:277)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.reset(FileCharSequenceProvider.java:269)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider.newCharSequence(FileCharSequenceProvider.java:40)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFile(TextSearchVisitor.java:260)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFiles(TextSearchVisitor.java:196)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:172)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:184)
+	at org.eclipse.search.core.text.TextSearchEngine$1.search(TextSearchEngine.java:54)
+	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
+	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2018-04-22 13:48:54.383
+!MESSAGE Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.
+!SESSION 2018-04-30 09:38:49.758 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-30 13:58:27.464
+!MESSAGE Indexed 'tlsdk' (84 sources, 110 headers) in 1.70 sec: 5,184 declarations; 13,145 references; 9 unresolved inclusions; 8 syntax errors; 88 unresolved names (0.48%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-30 14:13:17.431
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 1.57 sec: 5,162 declarations; 14,997 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-30 14:29:40.865
+!MESSAGE Indexed 'tlsdk' (82 sources, 107 headers) in 1.63 sec: 5,247 declarations; 13,444 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-30 15:27:58.776
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 1.86 sec: 5,163 declarations; 15,004 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-30 16:16:46.120
+!MESSAGE Indexed 'tlsdk' (82 sources, 107 headers) in 1.48 sec: 5,254 declarations; 13,512 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-30 20:27:07.269
+!MESSAGE Indexed 'tlsdk' (88 sources, 112 headers) in 1.55 sec: 5,347 declarations; 14,187 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-01 14:33:57.212
+!MESSAGE Indexed 'tlsdk' (82 sources, 108 headers) in 1.68 sec: 5,336 declarations; 13,704 references; 9 unresolved inclusions; 8 syntax errors; 38 unresolved names (0.20%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-01 14:34:56.549
+!MESSAGE Indexed 'tlsdk' (88 sources, 112 headers) in 1.58 sec: 5,386 declarations; 14,311 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-01 14:35:53.977
+!MESSAGE Indexed 'tlsdk' (82 sources, 108 headers) in 1.49 sec: 5,336 declarations; 13,704 references; 9 unresolved inclusions; 8 syntax errors; 38 unresolved names (0.20%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-01 14:37:19.468
+!MESSAGE Indexed 'tlsdk' (88 sources, 112 headers) in 1.67 sec: 5,386 declarations; 14,312 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-01 14:37:27.655
+!MESSAGE Indexed 'tlsdk' (82 sources, 107 headers) in 1.48 sec: 5,255 declarations; 13,514 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-01 14:46:59.728
+!MESSAGE Indexed 'tlsdk' (88 sources, 112 headers) in 1.55 sec: 5,386 declarations; 14,312 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-01 14:59:38.240
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 1.91 sec: 5,166 declarations; 15,031 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-01 21:07:11.238
+!MESSAGE Indexed 'tlsdk' (84 sources, 110 headers) in 1.44 sec: 5,187 declarations; 13,149 references; 9 unresolved inclusions; 8 syntax errors; 88 unresolved names (0.48%)
+!SESSION 2018-05-11 08:22:39.178 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 09:50:54.395
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 1.91 sec: 5,167 declarations; 15,035 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 13:28:40.796
+!MESSAGE Indexed 'tlsdk' (84 sources, 110 headers) in 1.50 sec: 5,187 declarations; 13,149 references; 9 unresolved inclusions; 8 syntax errors; 88 unresolved names (0.48%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 13:31:05.537
+!MESSAGE Indexed 'tlsdk' (82 sources, 104 headers) in 1.44 sec: 5,180 declarations; 14,477 references; 9 unresolved inclusions; 8 syntax errors; 16 unresolved names (0.08%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 13:33:57.755
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 1.70 sec: 4,976 declarations; 12,130 references; 9 unresolved inclusions; 8 syntax errors; 73 unresolved names (0.42%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 13:43:49.773
+!MESSAGE Indexed 'tlsdk' (88 sources, 118 headers) in 1.46 sec: 5,576 declarations; 14,992 references; 9 unresolved inclusions; 8 syntax errors; 17 unresolved names (0.08%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 13:43:58.050
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 1.44 sec: 5,167 declarations; 15,020 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 14:06:36.851
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 2.40 sec: 4,976 declarations; 12,124 references; 9 unresolved inclusions; 8 syntax errors; 73 unresolved names (0.43%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 14:13:20.994
+!MESSAGE Indexed 'tlsdk' (88 sources, 114 headers) in 2.95 sec: 5,513 declarations; 16,009 references; 9 unresolved inclusions; 8 syntax errors; 48 unresolved names (0.22%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 14:17:31.778
+!MESSAGE Indexed 'tlsdk' (82 sources, 107 headers) in 1.99 sec: 5,255 declarations; 13,512 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 14:28:05.895
+!MESSAGE Indexed 'tlsdk' (82 sources, 104 headers) in 2.81 sec: 5,180 declarations; 14,483 references; 9 unresolved inclusions; 8 syntax errors; 16 unresolved names (0.08%)
+
+!ENTRY org.eclipse.search 4 0 2018-05-11 14:47:40.682
+!MESSAGE Problems encountered during text search.
+!SUBENTRY 1 org.eclipse.search 4 4 2018-05-11 14:47:40.682
+!MESSAGE File 'tlsdk/8368_keyboard/version.in' has been skipped, problem while reading: ('Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.').
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:699)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:293)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:282)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.getInputStream(FileCharSequenceProvider.java:283)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.initializeReader(FileCharSequenceProvider.java:277)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.reset(FileCharSequenceProvider.java:269)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider.newCharSequence(FileCharSequenceProvider.java:40)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFile(TextSearchVisitor.java:260)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFiles(TextSearchVisitor.java:196)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:172)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:184)
+	at org.eclipse.search.core.text.TextSearchEngine$1.search(TextSearchEngine.java:54)
+	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
+	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2018-05-11 14:47:40.699
+!MESSAGE Resource is out of sync with the file system: '/tlsdk/8368_keyboard/version.in'.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 14:56:23.910
+!MESSAGE Indexed 'tlsdk' (88 sources, 112 headers) in 1.44 sec: 5,386 declarations; 14,317 references; 9 unresolved inclusions; 8 syntax errors; 10 unresolved names (0.05%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 14:58:18.180
+!MESSAGE Indexed 'tlsdk' (88 sources, 114 headers) in 1.58 sec: 5,512 declarations; 16,032 references; 9 unresolved inclusions; 8 syntax errors; 50 unresolved names (0.23%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 14:58:24.009
+!MESSAGE Indexed 'tlsdk' (88 sources, 112 headers) in 1.76 sec: 5,386 declarations; 14,320 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 14:58:28.422
+!MESSAGE Indexed 'tlsdk' (82 sources, 107 headers) in 1.38 sec: 5,255 declarations; 13,515 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 15:08:04.101
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 1.46 sec: 5,166 declarations; 15,045 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 15:58:13.198
+!MESSAGE Indexed 'tlsdk' (82 sources, 107 headers) in 1.40 sec: 5,255 declarations; 13,521 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 16:29:37.296
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 2.08 sec: 5,166 declarations; 15,039 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 16:35:06.243
+!MESSAGE Indexed 'tlsdk' (88 sources, 112 headers) in 2.50 sec: 5,386 declarations; 14,329 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 16:36:58.789
+!MESSAGE Indexed 'tlsdk' (88 sources, 114 headers) in 2.19 sec: 5,513 declarations; 16,043 references; 9 unresolved inclusions; 8 syntax errors; 50 unresolved names (0.23%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-11 16:41:17.418
+!MESSAGE Indexed 'tlsdk' (88 sources, 112 headers) in 2.51 sec: 5,387 declarations; 14,331 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.04%)
+!SESSION 2018-05-26 22:25:31.612 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-05-26 22:25:38.295
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2018-05-30 22:21:42.199 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-05-30 22:21:53.250
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2018-06-04 22:58:33.860 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-06-04 22:58:40.895
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-06-04 23:00:38.401
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 4.60 sec: 5,167 declarations; 15,050 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.03%)
+!SESSION 2018-06-04 23:01:56.927 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -data E:\workplace\hamster_sdk_1to3 -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-06-10 13:00:51.536
+!MESSAGE Indexed 'tlsdk' (88 sources, 112 headers) in 3.30 sec: 5,387 declarations; 14,331 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.04%)
+
+!ENTRY org.eclipse.search 4 0 2018-06-10 13:01:39.521
+!MESSAGE Problems encountered during text search.
+!SUBENTRY 1 org.eclipse.search 4 4 2018-06-10 13:01:39.521
+!MESSAGE File 'tlsdk/8366_mouse/version.in' has been skipped, problem while reading: ('Resource is out of sync with the file system: '/tlsdk/8366_mouse/version.in'.').
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/tlsdk/8366_mouse/version.in'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:699)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:293)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:282)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.getInputStream(FileCharSequenceProvider.java:283)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.initializeReader(FileCharSequenceProvider.java:277)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.reset(FileCharSequenceProvider.java:269)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider.newCharSequence(FileCharSequenceProvider.java:40)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFile(TextSearchVisitor.java:260)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFiles(TextSearchVisitor.java:196)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:172)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:184)
+	at org.eclipse.search.core.text.TextSearchEngine$1.search(TextSearchEngine.java:54)
+	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
+	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2018-06-10 13:01:39.586
+!MESSAGE Resource is out of sync with the file system: '/tlsdk/8366_mouse/version.in'.
+
+!ENTRY org.eclipse.search 4 0 2018-06-10 13:01:58.522
+!MESSAGE Problems encountered during text search.
+!SUBENTRY 1 org.eclipse.search 4 4 2018-06-10 13:01:58.522
+!MESSAGE File 'tlsdk/8366_mouse/version.in' has been skipped, problem while reading: ('Resource is out of sync with the file system: '/tlsdk/8366_mouse/version.in'.').
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/tlsdk/8366_mouse/version.in'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:699)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:293)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:282)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.getInputStream(FileCharSequenceProvider.java:283)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.initializeReader(FileCharSequenceProvider.java:277)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.reset(FileCharSequenceProvider.java:269)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider.newCharSequence(FileCharSequenceProvider.java:40)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFile(TextSearchVisitor.java:260)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFiles(TextSearchVisitor.java:196)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:172)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:184)
+	at org.eclipse.search.core.text.TextSearchEngine$1.search(TextSearchEngine.java:54)
+	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
+	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2018-06-10 13:01:58.522
+!MESSAGE Resource is out of sync with the file system: '/tlsdk/8366_mouse/version.in'.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-06-10 17:11:01.869
+!MESSAGE Indexed 'tlsdk' (82 sources, 107 headers) in 1.94 sec: 5,255 declarations; 13,521 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+!SESSION 2018-06-23 12:36:06.427 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-06-23 12:36:12.586
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2018-06-23 15:56:54.143 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -data E:\workplace\project\js_km_proj -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-06-23 15:56:56.801
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-06-23 16:07:19.835
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 2.33 sec: 5,167 declarations; 15,050 references; 9 unresolved inclusions; 8 syntax errors; 7 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-06-23 16:15:37.290
+!MESSAGE Indexed 'tlsdk' (84 sources, 106 headers) in 1.73 sec: 5,147 declarations; 13,100 references; 9 unresolved inclusions; 8 syntax errors; 95 unresolved names (0.52%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-06-23 16:57:01.195
+!MESSAGE Indexed 'tlsdk' (82 sources, 107 headers) in 2.04 sec: 5,255 declarations; 13,524 references; 9 unresolved inclusions; 8 syntax errors; 8 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-06-23 17:08:12.132
+!MESSAGE Indexed 'tlsdk' (82 sources, 104 headers) in 1.73 sec: 5,182 declarations; 14,500 references; 9 unresolved inclusions; 8 syntax errors; 18 unresolved names (0.09%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-06-23 17:10:20.721
+!MESSAGE Indexed 'tlsdk' (82 sources, 109 headers) in 1.93 sec: 5,498 declarations; 14,679 references; 9 unresolved inclusions; 8 syntax errors; 10 unresolved names (0.05%)
